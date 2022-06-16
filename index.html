@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academlo Store</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-contenedor">
+        <div class="one">
+            <a href="#"class="logo-nav">
+                <img class="logo-nav-icon" src="./assets/images/logoAcademlo.svg" alt="">
+                 STORE
+             </a>
+                <ul>
+                 <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#products">
+                    <li>Products</li>
+                </a>
+            </ul>
+         </div>
+            <div class="nav-botones">
+                <i class='bx bx-moon change-theme' id="moon-button"></i>
+             
+                <div class="nav-compra">
+                    <i class='bx bx-shopping-bag' id="shopping-cart-icon"></i>
+                    <span id="cont-compra" class="cont-compra" id="cont-compra">0</span>
+                </div>
+
+                <input class="nav-toggle" type="checkbox" id="menu-hamburguesa">
+                <label for="menu-hamburguesa">
+                     <i class='bx bx-grid-alt'></i>
+                </label>
+            </div>
+           
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="contenedor-home " >
+                <div class="img-home">
+                    <img class="foto-home  "src="./assets/images/home.png" alt="">
+                </div>
+                <div class="descrip-home">
+                    <h1 class="titulo-home">New Sweatshirt <br> COLLECTIONS 2022 </h1>
+                    <p class="parrafo-home">Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
+                    design.</p>
+                    <span class="precio-home">$14.00</span>
+                    <div class="botones-home">
+                        <a href="#" class="boton-discover">Discover
+                        </a> 
+                        <button class="boton-add-home product-button">ADD TO CART</button>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+        </section>
+        <section class="productos" id="products">
+            <div class="contenedor-productos contenedor">
+                <div class="lista-productos">
+                    <div class="carta-producto">
+                     <div class="contenedor-imagen">
+                        <img class="img-producto"src="./assets/images/featured1.png" alt="">
+                     </div>
+                     <div class="info-producto">
+                        <h2 class="precio">$14.00</h2>
+                        <h3 class="nombre-producto"></h3>
+                        <button class="boton-productos">
+                            <i class='bx bx-plus-circle bx-md'></i></button>
+                     </div>
+                    </div>
+                
+                    
+                </div>
+            </div>
+         </section>
+    </main> 
+    <footer>
+      <div class="contenedor-footer"> 
+            <div class="footer-section">
+                <h3 class="titulo-footer">Our Information</h3>
+                <ul class="lista-footer">
+                    <li>Toluca - México</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="titulo-footer">About Us</h3>
+                <ul class="lista-footer">
+                    <li>
+                    <a href="#" class="link-footer">Support Center</a>
+                    </li>
+                    <li>
+                    <a href="#" class="link-footer">Customer Support</a>
+                    </li>
+                    <li>
+                    <a href="#" class="link-footer">About Us</a>
+                    </li>
+                    <li>
+                    <a href="#" class="link-footer">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="titulo-footer">Product</h3>
+        
+                <ul class="enlaces-footer">
+                <li>
+                    <a href="#" class="link-footer">Hoodies</a>
+                </li>
+                <li>
+                    <a href="#" class="link-footer">Shirts</a>
+                </li>
+                <li>
+                    <a href="#" class="link-footer">Sweatshirts</a>
+                </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="titulo-footer">Social</h3>
+        
+                <ul class="redes">
+                <a href="https://www.facebook.com/" target="_blank" class="link-redes">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+        
+                <a href="https://twitter.com/" target="_blank" class="link-redes">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+        
+                <a href="https://www.instagram.com/" target="_blank" class="link-redes">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                </ul>
+            </div> 
+     </div>     
+    </footer>  
+   
+    <div class="carro-compras-overlay">
+        <div class="lista-productos-seleccionados">
+            <i class="bx bx-x bx-md cart-close" id="cart-close"></i>
+            <h2 class="cart-titulo">My Cart</h2>
+          <div class="contenedor-cart">
+                <div class="vacio">
+                     <img class="imagen-vacio"src="./assets/images/empty-cart.png" alt="">
+                    <h2>Your cart is empty</h2>
+                    <p>You can add items to your cart by clicking on the " + " button on the product page.</p>
+                </div>
+                 <article class="cart-card">
+                    <div class="cart-box">
+                        <img class="img-cart" src="" alt="">
+                    </div>
+                    <div class="cart-details"></div>
+                    <h3 class="titulo-cart"></h3>
+                    <span class="stock-cart"></span>
+                </article>
+         </div>
+             <div class="precios-cart">
+                <span class="item-cart-precios">
+                    <span id="item-count"></span>
+                    "items"
+                </span>
+                <span class="precio-total"></span>
+             </div> 
+             <div class="check-out">
+                <button class="boton-cart">
+                    <i class="bx bxs-check-shield"></i>
+                    Comprar</button>
+             </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>    
+</body>
+</html>
