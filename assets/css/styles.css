@@ -549,10 +549,6 @@ p{
     column-gap: 3rem;
 }
 
-
-
-
-
 }
 
 @media screen and (max-width: 767px){
@@ -665,6 +661,11 @@ input#menu-hamburguesa ~ ul {
       .foto-home{
         width: auto;
       }
+      .contenedor-footer{
+        grid-template-columns: repeat(4, max-content);
+        justify-content: space-between;
+      }
+
       
     }
 
